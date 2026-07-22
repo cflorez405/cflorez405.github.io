@@ -93,10 +93,15 @@ body {
 /* Container holding all 4 profiles */
 .profile-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates a strict 2x2 layout */
-  gap: 100px;                             /* Adds space between rows and columns */
-  max-width: 500px;                      /* Restricts overall grid width */
-  margin: 100px auto 0 auto;                        /* Centers the grid on the screen */
+  /* CHANGED: Swaps automatically to 1 column on small screens, drops to 2 columns if space permits */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* CHANGED: Uses a smaller fluid gap so images do not break on narrow screens */
+  gap: 40px;                             
+  /* CHANGED: Increased max-width slightly to cleanly fit images and gaps horizontally */
+  max-width: 600px;                      
+  /* CHANGED: Reduced rigid margins so content stays relative to the footer */
+  margin: 40px auto;                     
+  padding: 0 20px; /* Prevents edge clipping on mobile devices */
 }
 
 /* Individual card styling */
@@ -109,11 +114,15 @@ body {
 
 /* Circular profile picture styling */
 .profile-pic {
-  width: 200px;                          /* Set your desired width */
-  height: 200px;                         /* Keep height equal to width */
-  border-radius: 50%;                    /* Clips the image into a perfect circle */
-  object-fit: cover;                     /* Prevents distortion if image isn't square */
-  margin-bottom: 10px;                   /* Adds spacing between image and name */
+  width: 200px;                          
+  height: 200px;                         
+  /* CHANGED: Ensures your images scale down automatically on super tight mobile layouts */
+  max-width: 100%;
+  height: auto; 
+  aspect-ratio: 1 / 1; /* Keeps the profile image perfectly square so border-radius renders a circle */
+  border-radius: 50%;                    
+  object-fit: cover;                     
+  margin-bottom: 10px;                   
 }
 
 /* Profile text typography */
