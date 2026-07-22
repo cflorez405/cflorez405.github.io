@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Center h2 "MurrayTAFE" heading */
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+}
+
+/* Style the topnav links */
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Push the VERY LAST link (Home) to the right side */
+.topnav a:nth-child(2) {
+  margin-left: auto; 
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style for the active/current page link */
+.topnav a.active {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content-top {
+  background-color: #ddd;
+  padding: 10px;
+  min-height: 105px; /* Should be removed. Only for demonstration */
+}
+
+/* Ensure the body fills the entire screen height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Turn the body into a flex container column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Force the main content area to take up all available space */
+.content {
+  flex: 1;
+}
+
+/* Style your footer without the rigid margin-top */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+}
+
+.footer > p {
+  margin: 16px 0 16px auto; /* Explicitly sets Top: 16px, Right: 0, Bottom: 16px, Left: Auto */
+  margin-left: auto;
+}
+
+/* Container holding all 4 profiles */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates a strict 2x2 layout */
+  gap: 100px;                             /* Adds space between rows and columns */
+  max-width: 500px;                      /* Restricts overall grid width */
+  margin: 100px auto 0 auto;                        /* Centers the grid on the screen */
+}
+
+/* Individual card styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;                /* Stack image above text vertically */
+  align-items: center;                   /* Centers the image and text horizontally */
+  text-align: center;                    /* Centers text inside the paragraph tag */
+}
+
+/* Circular profile picture styling */
+.profile-pic {
+  width: 200px;                          /* Set your desired width */
+  height: 200px;                         /* Keep height equal to width */
+  border-radius: 50%;                    /* Clips the image into a perfect circle */
+  object-fit: cover;                     /* Prevents distortion if image isn't square */
+  margin-bottom: 10px;                   /* Adds spacing between image and name */
+}
+
+/* Profile text typography */
+.profile-name {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;                             /* Removes default paragraph margins */
+}
+
+.profile-card2 {
+  display: flex;
+  flex-direction: row;       /* Forces picture and text side-by-side */
+  align-items: center;       /* Centers the text vertically next to the picture */
+}
+
+.profile-picmain {
+  margin: 10px;
+  width: 132px;
+  height: 132px;
+}
+
+/* This affects ONLY the paragraph with our new class */
+.staff {
+  color: black;
+  font-size: 18px;
+  line-weight: bold;
+  text-align: center;
+}
+
+.staffpara {
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.profile-link {
+  text-decoration: none;  /* Removes the underline */
+  color: inherit;         /* Keeps your original text colour */
+  display: flex;
+  flex-direction: column; /* Keeps the image stacked directly above the name */
+  align-items: center;    /* Keeps everything centered */
+}
+
+/* Optional: Makes the cursor turn into a pointer finger when hovering */
+.profile-link:hover {
+  cursor: pointer;
+}
+
+/* Parent container holding both columns */
+.skills-attributes-container {
+  display: flex;
+  flex-direction: row;        /* Places the two lists side-by-side */
+  justify-content: left;    /* Centers the lists horizontally on the page */
+  gap: 80px;                  /* Adds space between the Skills and Attributes columns */
+  
+  /* Spacing to position it perfectly at the bottom */
+  margin-top: 0px;           /* Pushes it down away from your last text content */
+  margin-bottom: 40px;        /* Adds a gap before the footer starts */
+  margin-left: 5px;
+  font-family: inherit;       /* Inherits your project font */
+}
+
+/* Individual column styling */
+.list-column {
+  min-width: 150px;           /* Gives each column a stable base width */
+}
+
+/* Heading styles for Skills and Attributes */
+.list-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;        /* Spacing between the title and the list points */
+  text-align: left;           /* Aligns the heading with the bullet points */
+}
+
+/* The actual bulleted lists */
+.list-column ul {
+  margin: 0;
+  padding-left: 20px;         /* Creates room for the default bullet points */
+  text-align: left;           /* Ensures text flows nicely to the right of bullets */
+}
+
+/* Spacing out the list items */
+.list-column li {
+  font-size: 16px;
+  margin-bottom: 8px;         /* Adds breathing room between each item */
+  color: #333;
+}
+
+.contact-info > h2 {
+  text-align: left;
+}
+
+.contact-hours > h2 {
+text-align: left;
+}
+
+.contentcontact {
+  margin-left: 5px;
+  margin-bottom: 65px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: row;       /* Forces picture and text side-by-side */
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 200px;
+  margin-right: 700px;
+  column-gap: 200px;
+}
+
+.homepage  p {
+  font-size: 25px
+}
+
+.homeimg {
+
+}
