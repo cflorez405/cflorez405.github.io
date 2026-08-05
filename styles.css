@@ -149,7 +149,7 @@ body {
 .staff {
   color: black;
   font-size: 18px;
-  line-weight: bold;
+  font-weight: bold;
   text-align: center;
 }
 
