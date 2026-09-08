@@ -79,13 +79,13 @@ body {
 }
 
 /* Style your footer without the rigid margin-top */
-.footer {
+footer {
   background-color: #f1f1f1;
   padding: 10px;
   display: flex;
 }
 
-.footer > p {
+footer > p {
   margin: 16px 0 16px auto; /* Explicitly sets Top: 16px, Right: 0, Bottom: 16px, Left: Auto */
   margin-left: auto;
 }
