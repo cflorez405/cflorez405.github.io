@@ -9,14 +9,23 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-/* Center h2 "MurrayTAFE" heading */
-h2 {
+/* Center h1 "MurrayTAFE" heading */
+h1 {
   text-align: center;
+  font-size:medium;
+}
+
+h2, h3 {
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size:small;
 }
 
 h3 {
-  margin-left: 5px;
-  margin-bottom: 4px;
+  font-size:smaller;
 }
 
 /* Style the top navigation bar */
@@ -192,7 +201,7 @@ footer > p {
 }
 
 /* Heading styles for Skills and Attributes */
-.list-column h3 {
+.list-column h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;        /* Spacing between the title and the list points */
@@ -213,11 +222,11 @@ footer > p {
   color: #333;
 }
 
-.contact-info > h2 {
+.contact-info > h1 {
   text-align: left;
 }
 
-.contact-hours > h2 {
+.contact-hours > h1 {
 text-align: left;
 }
 
