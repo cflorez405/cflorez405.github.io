@@ -247,12 +247,13 @@ text-align: left;
   display: flex;
   flex-direction: row;       /* Forces picture and text side-by-side */
   align-items: center;
-  margin-left: 5px;
+  margin-left: 20px;
   margin-bottom: 200px;
   margin-right: 700px;
   column-gap: 200px;
 }
 
-.homepage  p {
-  font-size: 25px
+.homepage p {
+  font-size: 25px;
+  margin-left: 5px;
 }
