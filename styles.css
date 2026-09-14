@@ -239,6 +239,10 @@ text-align: left;
   margin-bottom: 65px;
 }
 
+.contentcontact p {
+  margin-left: 25px;
+}
+
 .homepage {
   display: flex;
   flex-direction: row;       /* Forces picture and text side-by-side */
